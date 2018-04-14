@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.wesleyan.bsit.busapp.Businfo">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text=""
+
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:text="This is BusName" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/scrollView2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/condPic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignLeft="@+id/driverPic"
+                android:layout_alignStart="@+id/driverPic"
+                android:layout_below="@+id/driverPic"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/appicon" />
+
+            <ImageView
+                android:id="@+id/driverPic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="21dp"
+                app:srcCompat="@drawable/appicon" />
+
+            <TextView
+                android:id="@+id/tvDriver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/driverPic"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="13dp"
+                android:layout_toEndOf="@+id/driverPic"
+                android:layout_toRightOf="@+id/driverPic"
+                android:text="This is the Driver"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/condPic"
+                android:layout_alignLeft="@+id/tvDriver"
+                android:layout_alignStart="@+id/tvDriver"
+                android:layout_marginBottom="19dp"
+                android:text="Driver"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvConductor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView10"
+                android:layout_alignStart="@+id/textView10"
+                android:layout_alignTop="@+id/condPic"
+                android:layout_marginTop="16dp"
+                android:text="This is the Conductor"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/condPic"
+                android:layout_alignLeft="@+id/tvConductor"
+                android:layout_alignStart="@+id/tvConductor"
+                android:layout_marginBottom="19dp"
+                android:text="Conductor" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/condPic"
+                android:layout_alignStart="@+id/condPic"
+                android:layout_below="@+id/condPic"
+                android:layout_marginTop="21dp"
+                android:text="From:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView13"
+                android:layout_below="@+id/tvTo"
+                android:layout_marginTop="10dp"
+                android:layout_alignStart="@+id/textView13"
+                android:text="Plate No.:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvFrom"
+                android:layout_alignBottom="@+id/tvFrom"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/tvFrom"
+                android:layout_toRightOf="@+id/tvFrom"
+                android:text="To:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView13"
+                android:layout_alignBottom="@+id/textView13"
+                android:layout_toEndOf="@+id/textView13"
+                android:layout_toRightOf="@+id/textView13"
+                android:text="This is From"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView21"
+                android:layout_alignBottom="@+id/textView21"
+                android:layout_toEndOf="@+id/textView21"
+                android:layout_toRightOf="@+id/textView21"
+                android:text="This is To"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPlateNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is PlateNo"
+                android:layout_below="@id/tvTo"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView18"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/seats"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvPlateNo"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorAccent"
+                android:onClick="SeatsInfor"
+                android:text="Seats"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+
+            <Button
+                android:id="@+id/route1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:onClick="routeFunction"
+                android:text="Route"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/seats"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/follow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:onClick="followFunction"
+                android:text="Follow"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:layout_below="@id/route1"
+                android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

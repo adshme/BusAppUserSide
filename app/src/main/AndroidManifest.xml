@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wesleyan.bsit.busapp">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.wesleyan.bsit.busapp.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".About"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Feedback"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Sched"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Reservation"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Buslist"
+            android:theme="@style/AppTheme" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAecOazg8i2PBaLZCGGdQVnmlJqHgoT1mY" />
+
+        <activity
+            android:name=".Route"
+            android:label="@string/title_activity_route"
+            android:parentActivityName=".Businfo" />
+        <activity
+            android:name=".Tracking"
+            android:label="@string/title_activity_tracking"
+            android:parentActivityName=".Businfo" />
+        <activity
+            android:name=".Businfo"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".EmployeeInfo"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Seat_Reserve"
+            android:theme="@style/AppTheme" />
+        />
+        <activity
+            android:name=".reg_user"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".qrcode"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".RebookSeats"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SeatInfor"
+            android:theme="@style/AppTheme" />
+        <receiver android:name=".NotificationPublisher" />
+    </application>
+
+</manifest>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wesleyan.bsit.busapp.qrcode"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/tvday"
+        android:layout_toRightOf="@+id/textView44"
+        android:layout_toEndOf="@+id/textView44" />
+
+    <ImageView
+        android:id="@+id/ivcode"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/appicon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tvseats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/user"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/textView43"
+        android:layout_alignBottom="@+id/textView43"
+        android:layout_toLeftOf="@+id/textView43"
+        android:layout_toStartOf="@+id/textView43" />
+
+    <TextView
+        android:id="@+id/tvhour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/textView41"
+        android:layout_alignBottom="@+id/textView41"
+        android:layout_toLeftOf="@+id/textView41"
+        android:layout_toStartOf="@+id/textView41" />
+
+    <TextView
+        android:id="@+id/tvmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/textView41"
+        android:layout_alignBottom="@+id/textView41"
+        android:layout_toLeftOf="@+id/textView42"
+        android:layout_toStartOf="@+id/textView42" />
+
+    <TextView
+        android:id="@+id/tvsec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/tvmin"
+        android:layout_alignBottom="@+id/tvmin"
+        android:layout_alignRight="@+id/ivcode"
+        android:layout_alignEnd="@+id/ivcode" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/ivcode"
+        android:layout_toLeftOf="@+id/tvmin"
+        android:layout_toStartOf="@+id/tvmin"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/tvday"
+        android:layout_alignBottom="@+id/tvday"
+        android:layout_toLeftOf="@+id/tvsec"
+        android:layout_toStartOf="@+id/tvsec" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/tvhour"
+        android:layout_alignBottom="@+id/tvhour"
+        android:layout_toLeftOf="@+id/tvhour"
+        android:layout_toStartOf="@+id/tvhour" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expires In:"
+        android:layout_alignBaseline="@+id/tvday"
+        android:layout_alignBottom="@+id/tvday"
+        android:layout_alignLeft="@+id/ivcode"
+        android:layout_alignStart="@+id/ivcode" />
+</RelativeLayout>

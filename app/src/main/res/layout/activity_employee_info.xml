@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.wesleyan.bsit.busapp.EmployeeInfo"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="9003dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView28"
+                android:layout_marginLeft="210dp"
+                android:text="Position"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Position:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_above="@+id/tvAdd"
+                android:layout_alignLeft="@+id/textView26"
+                android:layout_alignStart="@+id/textView26" />
+
+            <TextView
+                android:id="@+id/tvContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvGender"
+                android:layout_alignBottom="@+id/tvGender"
+                android:layout_alignLeft="@+id/tvPos"
+                android:layout_alignStart="@+id/tvPos"
+                android:text="Contact"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginLeft="195dp"
+                android:layout_marginTop="330dp" />
+
+            <TextView
+                android:id="@+id/tvAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvAge"
+                android:layout_alignStart="@+id/tvAge"
+                android:layout_below="@+id/textView24"
+                android:text="Address"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvAge"
+                android:layout_marginTop="17dp"
+                android:text="Address:"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvAge"
+                android:layout_marginLeft="100dp"
+                android:text="Gender"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_above="@+id/tvAge"
+                android:layout_marginLeft="90dp"
+                     />
+
+            <TextView
+                android:id="@+id/tvAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvName"
+                android:layout_alignStart="@+id/tvName"
+                android:layout_below="@+id/textView19"
+                android:text="Age"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvName"
+                android:layout_marginTop="18dp"
+                android:text="Age:"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:text="Name"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ivPicture"
+                android:layout_marginTop="13dp"
+                android:text="Name:"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ivPicture"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="49dp"
+                app:srcCompat="@drawable/appicon" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvAdd"
+                android:layout_marginTop="18dp"
+                android:text="Birthday"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvAge"
+                android:layout_alignStart="@+id/tvAge"
+                android:layout_below="@+id/textView11"
+                android:text="Birthday"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

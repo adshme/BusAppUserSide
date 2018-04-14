@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/bus"
+            android:icon="@drawable/bus"
+            android:title="Bus" />
+        <item
+            android:id="@+id/reserve"
+            android:icon="@drawable/seat"
+            android:title="Seat Reservation" />
+        <item
+            android:id="@+id/sched"
+            android:icon="@drawable/sched"
+            android:title="Schedule" />
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/feedback"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/about"
+            android:title="About" />
+    </group>
+
+
+
+</menu>
